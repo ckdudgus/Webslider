@@ -116,4 +116,4 @@ li{list-style: none;}
 
 /* 좌우 슬라이드 */
 #slider{}
-#slider ul{ width: 100000px; display: flex;}
+#slider ul{ width: 100000px; display: flex;} 
