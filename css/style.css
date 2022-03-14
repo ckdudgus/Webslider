@@ -1,6 +1,6 @@
 /* 공통 class */
 *{margin: 0; padding: 0;}
-a{text-decoration: none ; color: #222;}
+a{text-decoration: none ; color: rgb(150, 129, 61);}
 li{list-style: none;}
 
 :root{
@@ -22,6 +22,11 @@ li{list-style: none;}
 .d-none{
     display: none;
 }
+
+.ofh{
+    overflow: hidden;
+}
+
 .b-top{
     border-top:2px solid black ;
 }
@@ -109,3 +114,6 @@ li{list-style: none;}
 .d2ul li:hover{background-color: white;}
 .d2ul li:hover a {color: black;}
 
+/* 좌우 슬라이드 */
+#slider{}
+#slider ul{ width: 100000px; display: flex;}

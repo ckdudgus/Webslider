@@ -1,11 +1,13 @@
 $(document).ready(function(){
+    var px = $("#slider").width(); // 1200px
+    var dir = -1; // 방향
 
-  $('ul.d1').mouseover(function(){
-    $('ul.d2').slideDown();
-  })
-
-  $('ul.d1').mouseleave(function(){
-    $('ul.d2').slideUp();
-  })
-
+    //Json 포멧에서 key는 절대 변수로 사용할 수 없다
+    // "marginLeft" ->key , px*dir -> 값 
+    setInterval(function(){
+        $("#slider ul").animate( { "" : px*dir } , 400 , function(){
+            $(this).find("li").eq(0).appendTo($(this));
+            $(this).css("" , 0); 
+        });        
+    }, 3000);
 })
