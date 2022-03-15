@@ -115,5 +115,17 @@ li{list-style: none;}
 .d2ul li:hover a {color: black;}
 
 /* 좌우 슬라이드 */
-#slider{}
-#slider ul{ width: 100000px; display: flex;} 
+#slider li{
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+#slider li.show{
+    opacity: 1;
+    visibility: visible;
+}
+/* #slider ul{ width: 100000px; display: flex;}  */
