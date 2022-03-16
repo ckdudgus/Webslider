@@ -11,5 +11,10 @@ $(document).ready(function(){
         // $("#slider li").removeClass(classNm);
         $("#slider li").eq(count).addClass(classNm).siblings().removeClass(classNm)
     } , 3000);
+
+    $('.tabs h3').click(function(){
+        $('.tabs > div').removeClass('on');
+        $(this).parent().addClass('on');
+    });
         
 })

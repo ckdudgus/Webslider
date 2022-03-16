@@ -1,7 +1,10 @@
 /* 공통 class */
 *{margin: 0; padding: 0;}
-a{text-decoration: none ; color: rgb(150, 129, 61);}
+a{text-decoration: none ; color: rgb(29, 85, 107);}
 li{list-style: none;}
+.bodycolor{
+    background-color: #d5b969;
+}
 
 :root{
     --abwidth : 1200px; /*A,B형 컨테이너*/
@@ -46,6 +49,9 @@ li{list-style: none;}
 }
 .align-center{
     align-items: center;
+}
+.flex-vertical{
+    flex-direction: column;
 }
 
 .bg-red{
@@ -129,3 +135,30 @@ li{list-style: none;}
     visibility: visible;
 }
 /* #slider ul{ width: 100000px; display: flex;}  */
+
+#mainContent > div {
+    width: 33.3333%; align-items: top; 
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.tabs h3{
+    line-height: 2;
+    font-size: 20px;
+    padding: 0  10px;
+    cursor: pointer;
+}
+.tabs ul{
+    top: 35px;
+    border-top: 2px solid #ccc;
+    left: 0;
+    line-height: 1.8;
+    display: none; 
+}
+.tabs .notice li:not(:last-child){
+    border-bottom: 2px solid #ccc;
+}
+.tabs > div.on h3{
+    color: rgb(255, 0, 234);
+}
+.tabs > div.on .abs{ display: flex;}
+
