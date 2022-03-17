@@ -16,5 +16,13 @@ $(document).ready(function(){
         $('.tabs > div').removeClass('on');
         $(this).parent().addClass('on');
     });
+     
+
+    $('#modal button').click(function(){
+        $('#modal').addClass('d-none')
+    });
+    $('#popup').click(function(){
+        $('#modal').removeClass('d-none')
+    });
         
 })
